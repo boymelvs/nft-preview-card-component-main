@@ -46,6 +46,7 @@ footer {
 }
 
 footer a {
+   color: var(--cyan);
    text-decoration: none;
 }
 
@@ -60,7 +61,7 @@ footer a {
 }
 
 .main_content {
-   padding: 1.5rem;
+   padding: 1rem;
    border-radius: 1.5rem;
    max-width: 35rem;
 }
@@ -70,7 +71,7 @@ footer a {
    flex-direction: column;
    align-items: center;
    gap: 3rem;
-   padding: 2.5rem;
+   padding: 2rem;
    border-radius: 1.5rem;
    background-color: var(--very-dark-blue-card-bg);
 }
@@ -91,6 +92,7 @@ footer a {
    flex-direction: column;
    gap: 2rem;
    width: 100%;
+   font-size: 1.8rem;
 }
 
 .title {
@@ -105,7 +107,6 @@ footer a {
 
 .details {
    width: 100%;
-   font-size: 1.8rem;
    color: Var(--soft-blue);
    font-weight: var(--font-weight-300);
 }
@@ -127,12 +128,14 @@ footer a {
    gap: 0.5rem;
    align-items: center;
    color: var(--soft-blue);
+   font-size: 1.6rem;
 }
 
 .profile_container {
    display: flex;
    align-items: center;
    gap: 2rem;
+   font-size: 1.6rem;
    padding-top: 2rem;
    color: Var(--soft-blue);
    border-top-style: solid;
