@@ -1,0 +1,1 @@
+https://github.com/RyukioMiyamoto/front-end-mentor-practice/tree/master/10-nft-preview-card-component-main
