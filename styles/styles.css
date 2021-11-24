@@ -43,6 +43,7 @@ footer {
    font-size: 1.2rem;
    text-align: center;
    font-family: var(--font-fam-space-mono);
+   animation: blink_eth 2050ms ease-in-out infinite alternate-reverse;
 }
 
 footer a {
@@ -61,7 +62,7 @@ footer a {
 }
 
 .main_content {
-   padding: 1rem;
+   padding: 0.75rem;
    border-radius: 1.5rem;
    max-width: 35rem;
 }
@@ -71,20 +72,38 @@ footer a {
    flex-direction: column;
    align-items: center;
    gap: 3rem;
-   padding: 2rem;
+   padding: 2.5rem;
    border-radius: 1.5rem;
    background-color: var(--very-dark-blue-card-bg);
 }
 
 .image_container {
    width: 100%;
-   height: 30rem;
+   height: 32rem;
+   border-radius: 1rem;
 }
 
 .equilibrium {
-   border-radius: 1rem;
    height: 100%;
    width: 100%;
+   border-radius: 1rem;
+   opacity: 1;
+   transition: opacity 750ms;
+}
+
+.equilibrium:hover {
+   opacity: 0.5;
+   transition: opacity 750ms;
+}
+
+.image_container:hover {
+   background-image: url("../images/icon-view.svg");
+   background-position: center;
+   background-repeat: no-repeat;
+   background-color: hsla(178, 100%, 50%, 0.8);
+   border-radius: 1rem;
+   cursor: pointer;
+   filter: brightness(1.45);
 }
 
 .details_container {
@@ -96,6 +115,8 @@ footer a {
 }
 
 .title {
+   text-decoration: none;
+   color: var(--white);
    font-size: 2.5rem;
    font-weight: var(--font-weight-600);
 }
@@ -121,6 +142,21 @@ footer a {
    gap: 0.5rem;
    align-items: center;
    color: var(--cyan);
+   animation: blink_eth 2000ms ease-in-out infinite alternate-reverse;
+}
+
+@keyframes blink_eth {
+   from {
+      filter: brightness(0.5);
+   }
+
+   to {
+      filter: brightness(1);
+   }
+}
+
+.icon_clock {
+   animation: clock_spin 3500ms linear infinite;
 }
 
 .days_left {
@@ -129,6 +165,12 @@ footer a {
    align-items: center;
    color: var(--soft-blue);
    font-size: 1.6rem;
+}
+
+@keyframes clock_spin {
+   from {
+      transform: rotate(-360deg);
+   }
 }
 
 .profile_container {
