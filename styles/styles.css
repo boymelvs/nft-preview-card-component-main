@@ -81,29 +81,28 @@ footer a {
    width: 100%;
    height: 28rem;
    border-radius: 1rem;
+
+   background-image: url("../images/icon-view.svg");
+   background-position: center;
+   background-repeat: no-repeat;
 }
 
 .equilibrium {
    height: 100%;
    width: 100%;
    border-radius: 1rem;
-   opacity: 1;
-   transition: opacity 750ms;
 }
 
 .equilibrium:hover {
-   opacity: 0.5;
+   opacity: 0.45;
    transition: opacity 750ms;
 }
 
 .image_container:hover {
-   background-image: url("../images/icon-view.svg");
-   background-position: center;
-   background-repeat: no-repeat;
-   background-color: hsla(178, 100%, 50%, 0.8);
+   background-color: hsla(178, 100%, 50%, 0.6);
    border-radius: 1rem;
    cursor: pointer;
-   filter: brightness(1.45);
+   filter: brightness(1.5);
 }
 
 .details_container {
