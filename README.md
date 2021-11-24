@@ -1,4 +1,4 @@
-# Frontend Mentor - NFT PREVIEW CARD COMPONENT OLUTION
+# Frontend Mentor - NFT PREVIEW CARD COMPONENT SOLUTION
 
 ## Table of contents
 
